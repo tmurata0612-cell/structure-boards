@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>チップの栓 vs 素材の栓——先に「痛い」のはどっちか？</title>
+<style>
+:root{--bg:#0f1524;--panel:#18223c;--line:#2c3a5e;--txt:#dfe8ff;--sub:#9fb2cc;
+--tatemae:#f7f4ee;--honne:#fff3d4;--war:#ff6a45;--keep:#66c8ff;--acc:#ffca7a}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--txt);font-family:sans-serif;
+padding:16px;max-width:640px;margin:0 auto;line-height:1.6}
+h1{font-size:1.25rem;line-height:1.5}
+.date{display:inline-block;margin:6px 0 8px;padding:2px 10px;border-radius:12px;
+background:#241a3a;color:#c9a4ff;font-size:.75rem}
+.lead{color:var(--sub);font-size:.85rem;margin:0 0 16px}
+.section-title{font-size:.75rem;color:var(--sub);letter-spacing:.05em;
+margin:22px 0 8px;text-transform:uppercase}
+.section-title:first-of-type{margin-top:4px}
+.rope-box{overflow-x:auto;margin-bottom:4px}
+.legend{font-size:.7rem;color:var(--sub);margin-bottom:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+padding:12px;margin-bottom:12px;cursor:pointer}
+.card:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.card h2{font-size:1rem;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.hint{font-size:.7rem;color:var(--sub);font-weight:normal;white-space:nowrap}
+.chevron{display:inline-block;transition:transform .15s ease}
+.card.open .chevron{transform:rotate(180deg)}
+.faces{display:flex;gap:8px;margin:8px 0}
+.tatemae,.honne{flex:1;border-radius:8px;padding:8px;font-size:.85rem;color:#222}
+.tatemae{background:var(--tatemae)} .honne{background:var(--honne);color:#5a4300}
+.facelabel{display:block;font-size:.65rem;color:#8a8a8a;margin-bottom:2px}
+.honne .facelabel{color:#a07c1e}
+.why{font-size:.8rem;color:var(--sub)}
+.detail{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);
+font-size:.85rem}
+.card.open .detail{display:block}
+.detail p{margin-bottom:8px}
+.detail p:last-child{margin-bottom:0}
+.detail ul{margin:0 0 8px 20px}
+.detail ul:last-child{margin-bottom:0}
+.detail li{margin-bottom:4px}
+.detail li:last-child{margin-bottom:0}
+.detail a{color:var(--keep)}
+.tell{color:var(--acc)}
+.foot,.axiom{font-size:.8rem;color:var(--sub);margin-top:12px}
+.hansho{background:#241a3a;border:1px solid #c58bff;border-radius:10px;
+padding:10px;font-size:.85rem;margin-top:12px}
+</style></head><body>
+<h1>🇺🇸🔧🇨🇳 チップの栓 vs 素材の栓——先に「痛い」のはどっちか？</h1>
+<div class="date">2026-07-09時点の読み</div>
+<p class="lead">米は先端チップ・製造装置の流れを、中国はガリウム・レアアースの流れを、互いに握り合う。締めれば相手は痛いが、痛みは自分にも逆流する。</p>
+
+<h2 class="section-title">力学：配管図</h2>
+<div class="rope-box">
+<svg viewBox="0 0 360 290" width="100%" height="auto" role="img"
+aria-label="二本の生命線パイプの配管図。上のパイプ『頭脳の川：先端チップ・製造装置』は🇺🇸から🇨🇳へ流れ、中央に米の手のバルブ（半開き）と点線の第三国経由バイパス管がある。右上には中国側の『痛み：先端が届かない』ゲージ。下のパイプ『素材の川：ガリウム・レアアース』は🇨🇳から🌍へ流れ、中央に中国の手のバルブ（出し入れ）がある。左下には世界・米国側の『痛み：素材価格が跳ねる（最大6倍）』ゲージ。右側には建設中の点線パイプ『自前化パイプ（Huawei/SMIC）』、左側には建設中の点線パイプ『脱中国の素材パイプ（テキサス・カザフ）』が描かれている。">
+
+<text x="160" y="26" font-size="9.5" text-anchor="middle" style="fill:var(--txt)">頭脳の川：先端チップ・製造装置</text>
+
+<path d="M316,16 A12,12 0 0 1 340,16" fill="none" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+<line x1="328" y1="16" x2="337" y2="7" stroke="var(--war)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="328" cy="16" r="2.2" fill="var(--war)"/>
+<text x="328" y="34" font-size="6.3" text-anchor="middle" style="fill:var(--war)">痛み：先端が届かない</text>
+
+<path d="M100,87 Q140,44 200,87" fill="none" stroke="var(--sub)" stroke-width="2.5" stroke-dasharray="5 4" stroke-linecap="round"/>
+<text x="205" y="50" font-size="7" text-anchor="start" style="fill:var(--sub)">第三国経由の迂回（漏れ）</text>
+
+<text x="20" y="93" font-size="16" text-anchor="middle">🇺🇸</text>
+<text x="322" y="93" font-size="16" text-anchor="middle">🇨🇳</text>
+<rect x="38" y="78" width="268" height="18" rx="4" fill="var(--keep)" opacity=".85"/>
+<polygon points="90,81 98,87 90,93" fill="#0f1524" opacity=".55"/>
+<polygon points="165,81 173,87 165,93" fill="#0f1524" opacity=".55"/>
+<polygon points="240,81 248,87 240,93" fill="#0f1524" opacity=".55"/>
+
+<line x1="140" y1="78" x2="140" y2="58" stroke="var(--war)" stroke-width="2.5"/>
+<rect x="132" y="53" width="16" height="5" rx="2" fill="var(--war)"/>
+<circle cx="140" cy="87" r="10" fill="var(--panel)" stroke="var(--war)" stroke-width="2.5"/>
+<text x="140" y="91" font-size="13" text-anchor="middle" style="fill:var(--war)">⊗</text>
+<line x1="140" y1="96" x2="140" y2="108" stroke="var(--sub)" stroke-width="1.5"/>
+<text x="140" y="119" font-size="8.5" text-anchor="middle" style="fill:var(--txt)">米の手（半開き）</text>
+
+<line x1="235" y1="105" x2="308" y2="105" stroke="var(--sub)" stroke-width="2.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+<text x="271" y="120" font-size="7.2" text-anchor="middle" style="fill:var(--sub)">🚧自前化パイプ（Huawei/SMIC）</text>
+
+<line x1="50" y1="200" x2="125" y2="200" stroke="var(--sub)" stroke-width="2.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+<text x="87" y="185" font-size="6.8" text-anchor="middle" style="fill:var(--sub)">🚧脱中国の素材パイプ</text>
+<text x="87" y="193" font-size="6.8" text-anchor="middle" style="fill:var(--sub)">（テキサス・カザフ）</text>
+
+<text x="230" y="190" font-size="9.5" text-anchor="middle" style="fill:var(--txt)">素材の川：ガリウム・レアアース</text>
+
+<text x="322" y="225" font-size="16" text-anchor="middle">🇨🇳</text>
+<text x="20" y="225" font-size="16" text-anchor="middle">🌍</text>
+<rect x="38" y="210" width="268" height="18" rx="4" fill="var(--acc)" opacity=".85"/>
+<polygon points="250,213 242,219 250,225" fill="#0f1524" opacity=".55"/>
+<polygon points="175,213 167,219 175,225" fill="#0f1524" opacity=".55"/>
+<polygon points="100,213 92,219 100,225" fill="#0f1524" opacity=".55"/>
+
+<circle cx="220" cy="219" r="10" fill="var(--panel)" stroke="var(--war)" stroke-width="2.5"/>
+<text x="220" y="223" font-size="13" text-anchor="middle" style="fill:var(--war)">⊗</text>
+<line x1="220" y1="228" x2="220" y2="248" stroke="var(--war)" stroke-width="2.5"/>
+<rect x="212" y="248" width="16" height="5" rx="2" fill="var(--war)"/>
+<line x1="220" y1="253" x2="220" y2="264" stroke="var(--sub)" stroke-width="1.5"/>
+<text x="220" y="275" font-size="8.5" text-anchor="middle" style="fill:var(--txt)">中国の手（出し入れ）</text>
+
+<path d="M18,255 A12,12 0 0 1 42,255" fill="none" stroke="var(--line)" stroke-width="3" stroke-linecap="round"/>
+<line x1="30" y1="255" x2="39" y2="246" stroke="var(--war)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="30" cy="255" r="2.2" fill="var(--war)"/>
+<text x="30" y="271" font-size="6.3" text-anchor="middle" style="fill:var(--war)">痛み：素材価格が</text>
+<text x="30" y="280" font-size="6.3" text-anchor="middle" style="fill:var(--war)">跳ねる（最大6倍）</text>
+</svg>
+</div>
+<p class="legend">実線パイプ=今の流れ／⊗=栓（誰の手か明記）／点線=迂回・建設中／時間が経つほど🚧が太り、互いの栓は効かなくなる</p>
+
+<h2 class="section-title">3つの主体（タップで詳しく）</h2>
+
+<div class="card" tabindex="0" role="button" aria-expanded="false">
+<h2>🇺🇸 米政府（BIS） <span class="hint">タップで詳しく <span class="chevron">▾</span></span></h2>
+<div class="faces">
+<div class="tatemae"><span class="facelabel">建前</span>「安全保障のため先端技術は渡さない」</div>
+<div class="honne"><span class="facelabel">本音（推測）</span>「完全遮断は無理で自国も痛い。流量を絞って中国の“速度”だけ落としたい」</div>
+</div>
+<p class="why">なぜ→締めすぎると自国企業の売上→開発投資の循環が細り、同盟国も離れるから</p>
+<div class="detail">
+<p><b>持ち札（誰に効くカードか）</b></p>
+<ul>
+<li>【対中国】先端チップ・製造装置の元栓 — 設計も装置も米と同盟国側にある</li>
+<li>【対中国】域外適用 — 中国企業の海外子会社まで栓の範囲を広げられる（2026年6月に適用を明確化）</li>
+<li>【弱み・対国内】栓を締めるほどNVIDIA等の売上が細り、「緩めろ」という内圧が強まる</li>
+</ul>
+<p>いま打つ手・狙う展開: H200級チップは条件付きで通す「調整弁」方式へ切替（2025年12月〜）。全閉でも全開でもなく、中国の最先端到達だけを遅らせる流量管理</p>
+<p><span class="tell">この読みの根拠🔍</span></p>
+<ul>
+<li>全面禁止から「条件を満たせば個別審査で許可」へ実際に切り替えた</li>
+<li>同時に子会社経由の抜け道は塞ぎにいっている（緩和と締め付けの同時進行＝流量管理の証拠）</li>
+<li>関連報道: <a href="https://www.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china" target="_blank" rel="noopener">米商務省BIS「対中半導体輸出の審査方針を改定」（公式発表）</a>・<a href="https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china" target="_blank" rel="noopener">Al Jazeera「AIチップ規制は中国企業の海外子会社にも適用と米発表」(2026-06-01)</a></li>
+</ul>
+</div>
+</div>
+
+<div class="card" tabindex="0" role="button" aria-expanded="false">
+<h2>🇨🇳 中国政府 <span class="hint">タップで詳しく <span class="chevron">▾</span></span></h2>
+<div class="faces">
+<div class="tatemae"><span class="facelabel">建前</span>「対等な対抗措置だ」</div>
+<div class="honne"><span class="facelabel">本音（推測）</span>「素材の栓は交渉カード。本命は時間稼ぎ＝自前化が育つまで決定的対立を避ける」</div>
+</div>
+<p class="why">なぜ→素材の栓は諸刃（買い手も失う）で、本当の勝ち筋は自前化だから</p>
+<div class="detail">
+<p><b>持ち札（誰に効くカードか）</b></p>
+<ul>
+<li>【対米・対世界】ガリウム・レアアース等の栓 — 精錬の圧倒的シェア。締めれば価格が跳ねる（実際に最大6倍の高騰）</li>
+<li>【対米】巨大市場そのもの — 米チップ企業の売上を人質に、米の内側の「緩めろ」圧力を焚きつけられる</li>
+<li>【対国内】自前化への集中投資 — 国産チップ・国産装置（Huawei/SMIC）。時間が経つほど米の栓が効かなくなる</li>
+</ul>
+<p>いま打つ手・狙う展開: 素材の栓は締めたり戻したり（取引がまとまれば一部停止）を繰り返し、交渉の温度計として使う。裏で自前化を最速で進める</p>
+<p><span class="tell">この読みの根拠🔍</span></p>
+<ul>
+<li>規制品目を広げる一方で、取引に応じて一部を停止している（本気の遮断ではなく調整弁として使っている）</li>
+<li>2026年4月に供給網安全の法制度を整備＝長期戦・自前化路線の制度固め</li>
+<li>関連報道: <a href="https://www.spglobal.com/energy/en/news-research/latest-news/metals/012726-rare-earth-supply-bottlenecks-set-to-persist-in-2026" target="_blank" rel="noopener">S&P Global「レアアース供給の逼迫は2026年も持続へ」(2026-01)</a></li>
+</ul>
+</div>
+</div>
+
+<div class="card" tabindex="0" role="button" aria-expanded="false">
+<h2>🏢 NVIDIA等・米チップ企業 <span class="hint">タップで詳しく <span class="chevron">▾</span></span></h2>
+<div class="faces">
+<div class="tatemae"><span class="facelabel">建前</span>「規制には全面的に従う」</div>
+<div class="honne"><span class="facelabel">本音（推測）</span>「中国市場を失えば次世代開発の原資が細る。栓は少しでも緩くしてほしい」</div>
+</div>
+<p class="why">なぜ→かつて9割前後あった中国シェアはおよそ半分に低下したと報じられ、売上→開発→競争力の循環が痩せるから</p>
+<div class="detail">
+<p><b>持ち札（誰に効くカードか）</b></p>
+<ul>
+<li>【対米政府】「締めすぎると米国が負ける」の説得材料 — 売上が細れば次世代開発が遅れ、その隙に中国製が育つ、というロジック</li>
+<li>【対中国】性能を抑えた「規制適合チップ」 — 栓の隙間に合わせて製品を作り替え、市場に残り続けられる</li>
+</ul>
+<p>いま打つ手・狙う展開: 条件付き解禁（H200級）を勝ち取った流れを広げ、「調整弁の開度」を一段ずつ上げさせる</p>
+<p><span class="tell">この読みの根拠🔍</span></p>
+<ul>
+<li>全面禁止だったH200級が条件付き審査に変わった＝内側からの圧力が実際に栓を動かした</li>
+<li>域外適用の明確化など、当局と抜け道のいたちごっこが続いている＝それだけ流れる動機が強い</li>
+<li>関連報道: <a href="https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china" target="_blank" rel="noopener">Al Jazeera「AIチップ規制は中国企業の海外子会社にも適用と米発表」(2026-06-01)</a></li>
+</ul>
+</div>
+</div>
+
+<p class="axiom">背景の力：ASML・日欧の装置メーカー（米の栓の実行部隊）／台湾TSMC（生産の心臓）／
+韓国／第三国ハブ（バイパス管＝漏れ）</p>
+<div class="hansho">🧪 反証予測（この読みのテスト）:
+この盤面の読み＝「双方とも全閉にはできない流量調整の消耗戦。短期は先端を
+止められる中国側が痛いが、自前化が育つほど栓そのものが無効になっていく」。
+これが正しいなら、①米の条件付き承認の対象は今後も少しずつ広がるはず。
+②中国の素材規制も取引に応じた出し入れが続くはず。——どちらかが本当に
+全閉（全面禁輸）に踏み込み、それを維持したら、この読みは崩れる。</div>
+<footer class="foot">この盤面の“本音・行動原理”は公開情報から組んだ推測です。
+各カードの「この読みの根拠🔍」と上の反証予測を併記しています。
+2026-07-09時点の読み。</footer>
+
+<script>
+document.querySelectorAll('.card').forEach(c=>{
+  function toggle(){
+    c.classList.toggle('open');
+    c.setAttribute('aria-expanded', c.classList.contains('open') ? 'true' : 'false');
+  }
+  c.addEventListener('click', toggle);
+  c.addEventListener('keydown', function(e){
+    if(e.key === 'Enter' || e.key === ' '){
+      e.preventDefault();
+      toggle();
+    }
+  });
+});
+</script>
+</body></html>
